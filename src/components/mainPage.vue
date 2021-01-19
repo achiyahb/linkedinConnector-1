@@ -11,22 +11,23 @@
       class="bg-teal text-grey-5 shadow-2"
     >
 
-      <q-tab name="search" icon="mail" label="By Search" />
+      <q-tab name="connect" icon="mail" label="Connect" />
       <q-tab name="withdraw" icon="alarm" label="Withdraw" />
-      <q-tab name="connect" icon="movie" label="Connect" />
+      <q-tab name="search" icon="movie" label="By Search" />
 
     </q-tabs>
+    <h5>Linkedin Connector</h5>
     <q-tab-panels  v-model="tab" animated >
-      <q-tab-panel name="search">
-        <bySearch/>
+      <q-tab-panel name="connect">
+        <connect/>
       </q-tab-panel>
 
       <q-tab-panel name="withdraw">
         <withdraw/>
       </q-tab-panel>
 
-      <q-tab-panel name="connect">
-        <connect/>
+      <q-tab-panel name="search">
+        <bySearch/>
       </q-tab-panel>
     </q-tab-panels>
 
