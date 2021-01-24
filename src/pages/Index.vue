@@ -15,6 +15,7 @@ export default {
 
 <style scoped >
 .flex flex-center{
+  padding: 0;
   width: 500px;
   height: 500px;
 

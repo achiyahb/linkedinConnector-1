@@ -4,6 +4,17 @@
 // More info: https://quasar.dev/quasar-cli/developing-browser-extensions/background-hooks
 
 export default function attachBackgroundHooks (bridge /* , allActiveConnections */) {
+
+
+
+  bridge.on('howMany', event => {
+    let payload = event.data
+    payload = 'blabla'
+    console.log('backguond is hit')
+    bridge.send(event.eventResponseKey, payload)
+  })
+
+
   bridge.on('storage.get', event => {
     const payload = event.data
     if (payload.key === null) {
